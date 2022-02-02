@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register Or login</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="grid">
+        <h2 class="header">Login / Sign Up</h2>
+
+        <hr style="margin-top: 50px"> 
+
+        <form  id="register-form"> 
+                <div class="group">
+                    <input id="nm" type="text" placeholder="Enter Your Name" value=""/>
+                    <input id="pw" type="password" placeholder="Enter Your Password" value=""/>
+                    <input id="rgstr_btn" type="submit" value="Sign Up" onClick="store()"/> 
+                </div>
+                <a href="#" id="member">Alredy Member?</a>
+            </form>
+
+            <form id="login-form"> 
+                <div class="group">
+                    <input id="userName" type="text" placeholder="Enter Username" value=""/>
+                    <input id="userPw" type="password" placeholder="Enter Password" value=""/>
+                    <input id="login_btn" type="submit" value="Login" onClick="check()"/> 
+                </div>
+                <a href="#" id="register">Dont have account?</a>
+            </form>
+        </div>
+       
+        
+        <script type="text/javascript" language="javascript" src="login.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    </body>
+</html>
